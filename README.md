@@ -30,7 +30,7 @@ The app uses local React state to handle the verification flow:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/dearly-letters.git](https://github.com/your-username/dearly-letters.git)
+    git clone [https://github.com/Foizn-mp4/Letters.git](https://github.com/Foizn-mp4/Letters.git)
     ```
 
 2.  **Install dependencies:**
