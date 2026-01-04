@@ -32,7 +32,7 @@ const letters: Letter[] = [
     initial: "M", 
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600",
     question: "What city were you born in?", 
-    answer: "seattle", 
+    answer: "blue", 
     letter: "Dear Michael,\n\nI hope this letter finds you well...", 
     color: "#BB8ED0" 
   },
@@ -42,7 +42,7 @@ const letters: Letter[] = [
     initial: "E", 
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600",
     question: "What's your pet's name?", 
-    answer: "max", 
+    answer: "blue", 
     letter: "Dear Emily,\n\nWhere do I even begin?...", 
     color: "#E0A8A8" 
   },
@@ -52,7 +52,7 @@ const letters: Letter[] = [
     initial: "D", 
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
     question: "What's your favorite food?", 
-    answer: "pizza", 
+    answer: "blue", 
     letter: "Dear David,\n\nI wanted to write this to express how much I value our friendship...", 
     color: "#3291B6" 
   },
@@ -62,7 +62,7 @@ const letters: Letter[] = [
     initial: "J", 
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600",
     question: "What month is your birthday?", 
-    answer: "july", 
+    answer: "blue", 
     letter: "Dear Jessica,\n\nYou bring so much energy and enthusiasm...", 
     color: "#BB8ED0" 
   },
@@ -72,7 +72,7 @@ const letters: Letter[] = [
     initial: "A", 
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600",
     question: "What's your favorite season?", 
-    answer: "summer", 
+    answer: "blue", 
     letter: "Dear Alex,\n\nI've been reflecting on our journey together...", 
     color: "#E0A8A8" 
   },
@@ -82,7 +82,7 @@ const letters: Letter[] = [
     initial: "J", 
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600",
     question: "What instrument do you play?", 
-    answer: "guitar", 
+    answer: "blue", 
     letter: "Dear Jordan,\n\nWriting this letter feels long overdue...", 
     color: "#3291B6" 
   }
