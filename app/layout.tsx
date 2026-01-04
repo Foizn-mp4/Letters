@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PillNav from "@/components/PillNav";
+import LiquidEther from "@/components/LiquidEther";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +13,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const navItems = [
+  { label: 'Home', href: '#/' },
+  { label: 'Letters', href: '#/Letters' },
+  { label: 'About', href: '#/about' },
+  { label: 'Contact', href: '#/contact' }
+];
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +34,45 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
-        {children}
+        <div style={{ 
+          position: 'fixed', 
+          top: 0, 
+          left: 0, 
+          width: '100vw', 
+          height: '100vh',
+          zIndex: 0,
+          pointerEvents: 'none',
+          backgroundColor: '#000000'
+        }}>
+          <LiquidEther
+            colors={['#3291B6', '#BB8ED0', '#E0A8A8']}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={false}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+          />
+        </div>
+
+        <div style={{ position: 'relative', zIndex: 10 }}>
+          <PillNav 
+            logo='/logo.png'
+            items={navItems}
+            className="centered-nav"
+          />
+          {children}
+        </div>
       </body>
     </html>
   );
